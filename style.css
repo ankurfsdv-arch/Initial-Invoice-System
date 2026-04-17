@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+    border: 2px solid #000;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #f0f8ff;
+}
+
+.header h1 {
+    color: #0066cc;
+    font-size: 32px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.header .subtitle {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.gstin-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+.form-group input, .form-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #e6f2ff;
+    font-size: 13px;
+}
+
+td input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.add-row-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.totals {
+    margin-top: 20px;
+}
+
+.totals-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.totals-row label {
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.totals-row input {
+    width: 120px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.bank-details {
+    border: 1px solid #000;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-save { background: #007bff; }
+.btn-print { background: #28a745; }
+.btn-excel { background: #17a2b8; }
+.btn-clear { background: #dc3545; }
+
+@media print {
+    .button-group, .add-row-btn { display: none !important; }
+    body { background: white; padding: 0; }
+    .container { box-shadow: none; max-width: 100%; }
+}
+
+.signature-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
